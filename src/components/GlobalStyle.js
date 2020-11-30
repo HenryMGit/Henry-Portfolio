@@ -9,6 +9,7 @@ const GlobalStyle = createGlobalStyle`
 
     body{
         background: #1b1b1b;
+        font-family: 'Inter', sans-serif;
     }
 
     button{
@@ -47,7 +48,7 @@ const GlobalStyle = createGlobalStyle`
     a{
         font-size: 1.1rem;
     }
-    
+
     p{
         padding: 3rem 0rem;
         color: #ccc;
