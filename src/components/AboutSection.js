@@ -1,23 +1,28 @@
-import styled from 'styled-components';
 import {About, Description, Image, Hide} from '../styles';
-
 import home1 from '../img/home1.png';
 
+//Framer Motion
+import { motion } from 'framer-motion';
+
 const AboutSection = () => {
+    
+
     return(
         <About>
             <Description>
-                <div className="title">
+                <motion.div >
                     <Hide>
-                        <h2>We work to make</h2>
+                        <motion.h2>
+                            We work to make
+                        </motion.h2>
                     </Hide>
                     <Hide>
-                        <h2>your <span>Dreams</span> come</h2>
+                        <motion.h2>your <span>Dreams</span> come</ motion.h2>
                     </Hide>
                     <Hide>
-                        <h2>true.</h2>
+                        <motion.h2>true.</motion.h2>
                     </Hide>
-                </div>
+                </motion.div>
                 <p>Contact us for any photgraph. This is just a placeholder for some text</p>
                 <button>Contact Us</button>
             </Description>
