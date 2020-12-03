@@ -3,6 +3,7 @@ import home1 from '../img/home1.png';
 
 //Framer Motion
 import { motion } from 'framer-motion';
+import { titleAnim, fade, photoAnim } from '../animation';
 
 const AboutSection = () => {
     
@@ -12,22 +13,22 @@ const AboutSection = () => {
             <Description>
                 <motion.div >
                     <Hide>
-                        <motion.h2>
+                        <motion.h2 variants={titleAnim}>
                             We work to make
                         </motion.h2>
                     </Hide>
                     <Hide>
-                        <motion.h2>your <span>Dreams</span> come</ motion.h2>
+                        <motion.h2 variants={titleAnim}>your <span>Dreams</span> come</ motion.h2>
                     </Hide>
                     <Hide>
-                        <motion.h2>true.</motion.h2>
+                        <motion.h2 variants={titleAnim} >true.</motion.h2>
                     </Hide>
                 </motion.div>
-                <p>Contact us for any photgraph. This is just a placeholder for some text</p>
-                <button>Contact Us</button>
+                <motion.p variants={fade} >Contact us for any photgraph. This is just a placeholder for some text</motion.p>
+                <motion.button variants={fade} >Contact Us</motion.button>
             </Description>
             <Image>
-                <img src={home1} alt="camera guy"/>
+                <motion.img variants={photoAnim} src={home1} alt="camera guy"/>
             </Image>
         </About>
     );
