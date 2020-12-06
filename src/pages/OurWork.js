@@ -7,6 +7,7 @@ import theracer from '../img/theracer-small.png';
 import goodtimes from '../img/goodtimes-small.png';
 
 import { Link } from 'react-router-dom';
+import ScrollTop from '../components/ScrollTop';
 
 //Animations
 import { motion } from 'framer-motion';
@@ -53,6 +54,7 @@ const OurWork = () =>{
                     </Hide>
                 </Link>
             </Movie>
+            <ScrollTop />
         </Work>
     );
 }

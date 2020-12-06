@@ -8,6 +8,7 @@ import Nav from './components/Nav';
 import ContactUs from './pages/ContactUs';
 import OurWork from './pages/OurWork';
 import MovieDetail from './pages/MovieDetail';
+
 //Router
 import {Switch, Route, useLocation } from 'react-router-dom';
 
